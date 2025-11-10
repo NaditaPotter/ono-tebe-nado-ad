@@ -1,1 +1,345 @@
-/* место для вашего кода */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway";
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 293px;
+    position: relative;
+}
+
+header img {
+    width: 148px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+header ul {
+    display: flex;
+    list-style-type: circle;
+    text-transform: lowercase;
+}
+
+header ul li {
+    margin-right: 30px;
+}
+
+header ul li:first-child {
+    list-style: none;
+}
+
+header ul li a {
+    color: black;
+}
+
+header ul li a:hover {
+    color: rgb(250, 13, 13);
+}
+
+a.active {
+    text-decoration: none;
+}
+
+address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.3px;
+    letter-spacing: 0%;
+    width: fit-content;
+    margin-right: 50px;
+}
+
+address p a, address p {
+    color: black;
+}
+
+address p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.3px;
+    letter-spacing: 0%;
+}
+
+.cover {
+    position: relative;
+    background: url('../images/cover.jpg');
+    background-size: cover;
+    width: 1100px;
+    height: 757px;
+    min-height: unset;
+    
+    padding: 160px 20px 0;
+    z-index: 2;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.cover h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 100px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 106px;
+}
+
+.left, .center, .right {
+    display: block;
+    letter-spacing: 0.3em;
+    margin: 20px 25px 20px 50px;
+    font-style: Bold;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.descreption {
+    display: flex;
+    z-index: 2;
+    font-size: 22px;
+    text-transform: uppercase;
+    word-spacing: 0.9em;
+    position: relative;
+    bottom: unset;
+    left: 50px;
+    align-items: center;
+    width: fit-content;
+    margin-top: 0;
+    padding-bottom: 61px;
+}
+
+button {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+    padding: 12px 32px;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-left: 107px;
+}
+
+.lots {
+    margin-top: 180px; /* Отступ 180px от блока обложки */
+    margin-bottom: 120px; /* Отступ 120px до блока "Об аукционе" */
+}
+
+.lots h2 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 27px;
+    width: 121px;
+    height: 47px;
+    margin-left: 40px;
+}
+
+.lots-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 334px);
+    gap: 25px;
+    justify-content: center;
+}
+
+.lots article {
+    position: relative;
+    width: 334px;
+    height: 596px;
+    background-size: cover;
+    opacity: 1;
+}
+
+.lots article a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    display: block;
+    z-index: 2;
+}
+
+
+.lots article h3 {
+    position: absolute;
+    text-decoration: underline;
+    color: white;
+    text-transform: uppercase;
+    width: 254px;
+    height: 110px;
+    top: 48px;
+    left: 40px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+}
+
+.lots article p {
+    position: absolute;
+    color: white;
+    width: 254px;
+    bottom: 48px;
+    left: 40px;
+    line-height: 120%;
+    font-weight: 400;
+    margin: 0;
+    font-size: 20px;
+}
+
+
+.lot-1 {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../images/card-lot-01.jpg');
+}
+
+.lot-2 {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../images/card-lot-02.jpg');
+}
+
+.lot-3 {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../images/card-lot-03.jpg');
+}
+
+.lots > a {
+    color: black;
+    text-transform: lowercase;
+    margin: 30px 64px 0;
+    display: block;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.about {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 72px;
+    margin-top: 0; /* Сбрасываем старый отступ, теперь он в .lots margin-bottom */
+    margin-bottom: 180px; /* Отступ 180px до подвала */
+}
+
+.about__column:last-child {
+    max-width: 693px;
+}
+
+.about__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-left: 47px;
+    margin-right: 0;
+    margin-top: 50px;
+}
+
+.about__logo-image {
+    width: 148px;
+    height: 114px;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 133px;
+    margin-bottom: 100px;
+}
+
+.about__text p {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 0;
+    align-self: flex-start;
+    width: 1100px;
+    height: 180px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+footer nav a {
+    color: black;
+    text-decoration: none;
+}
+
+footer nav li:nth-child(2) a,
+footer nav li:nth-child(3) a {
+    text-decoration: underline;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 48px;
+    list-style: none;
+    margin-right: 50px;
+}
+
+footer > ul a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > ul img {
+    width: 48px;
+    height: 48px;
+}
